@@ -51,6 +51,6 @@ if __name__ == "__main__":
     # a.add_begin(10)
     # a.add_begin(20)
     # a.add_begin(20)
-    # a.add_begin(20)
+    # a.add_begin(20) 
     a.add_end(30)
     print(a.get_list())
