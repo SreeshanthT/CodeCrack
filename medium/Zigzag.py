@@ -8,15 +8,17 @@ def convert(s: str, numRows: int) -> str:
     result = ""
     # Step size
     step = 2 * numRows - 2
+    print(step)
     # Loop for each row
     for i in range(0, numRows):
         # Loop for each character in the row
+        print([j for j in range(i, len(s), step)])
         for j in range(i, len(s), step):
+            print(j)
             result += s[j]
             if i != 0 and i != numRows - 1 and (j + step - 2 * i) < len(s):
                 result += s[j + step - 2 * i]
                 
-    print(result)
     return result
 
-convert(s = "PAYPALISHIRING", numRows = 4)
+convert(s = "PAYPALISHIRING", numRows = 3)
