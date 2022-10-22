@@ -16,7 +16,6 @@ class Solution:
             return strs[0]
         
         longPrefix = ''
-        tempLongPrefix = ''
         i=0
         p=0
         count = lambda i : len(min(i, key=len)) - 1
@@ -26,25 +25,13 @@ class Solution:
                 return longPrefix
 
             for j in range(1,len(strs)):
-                
                 if len(strs[j]) > i and strs[0][i] == strs[j][i]:
                     p += 1
                     if p == (len(strs) - 1):
-
                         longPrefix += strs[0][i]
-                        
                         p=0
                 else:
-                    
-                    # if len(tempLongPrefix) > len(longPrefix):
-                    #     longPrefix = tempLongPrefix
-                    #     tempLongPrefix = ''
-                    p=0
-            
-           
-                
-                
-           
+                    return longPrefix    
             i += 1
             
             
@@ -52,7 +39,7 @@ class Solution:
         
 
 if __name__ == "__main__":
-    strs = ["aca","cba"]
+    strs = ["flower","flow","flight"]
     solutution = Solution()
     longPrefix = solutution.longestCommonPrefix(strs)
     print(longPrefix)
