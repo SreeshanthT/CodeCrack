@@ -25,8 +25,8 @@ class Solution:
 
 if __name__ == "__main__":
     solution = Solution()
-    # print(solution.lengthOfLongestSubstring("abcabcbb"))
-    # print(solution.lengthOfLongestSubstring("bbbbb"))
+    print(solution.lengthOfLongestSubstring("abcdabcbb"))
+    print(solution.lengthOfLongestSubstring("bbbbb"))
     # print(solution.lengthOfLongestSubstring("pwwkew"))
     print(solution.lengthOfLongestSubstring(" "))
     print(solution.lengthOfLongestSubstring("aua"))
